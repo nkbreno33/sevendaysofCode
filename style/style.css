@@ -92,11 +92,12 @@ nav a {
 }
 
 .container__metricas {
-    width: 100vw;
+    max-width: 1440px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 32px;
-    padding: 0 32px 96px;    
+    margin: 0 auto; 
+    padding: 0 40px 96px;  
 }
 
 .metricas__numero {
@@ -117,3 +118,89 @@ nav a {
 .metricas__descricao {
     line-height: 24px;
 }
+
+.vagas__talentos {
+    text-align: center;
+    margin: 96px auto;
+}
+
+.vagas__texto {
+    text-align: center;
+    color: var(--cor-destaque);
+    font-weight: 600;
+    line-height: 20px;
+    padding-bottom: 16px;
+}
+
+.vagas__titulo {
+    color: #101828;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 44px;
+    letter-spacing: -0.72px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.vagas__descricao {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: center;
+}
+
+.vagas__imagem {
+    max-width: 1400px;
+    height: 400px;
+    margin-top: 62px;
+}
+
+.container__design{
+    display: flex;
+    width: 100vh;
+    height: 358px;
+    margin: auto;
+    padding: 32px auto;
+    border: 1px solid red;
+}
+
+.container__descricao {
+    display: flex;
+    flex-direction: column;    
+}
+
+.caixa__vagas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+.container__descricao h3 {
+    color: #101828;
+    font-size: 20px;
+}
+
+/*.container__descricao {
+    max-width: 768px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    padding: 24px;
+    margin: 42px auto;
+    
+    .caixa__vagas {
+    border: 1px solid #EAECF0;
+    width: 720px;
+    height: 84px;
+    border-radius: 16px;
+    gap: 32px;
+    padding: 0 10px;
+    
+}
+
+.vaga__descricao {
+    display: flex;
+    gap: 24px;    
+}*/
