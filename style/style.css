@@ -7,6 +7,7 @@
 
 :root {
     --cor-destaque: #8e2424;
+    --cor-subtitulo: #101828;
     --cor-texto: #667085;
     --cor-botao: #ffffff;
     --font-padrao: 'Inter', sans-serif;
@@ -24,11 +25,11 @@ nav a {
 
 .container__nav {
     display: flex;
+    justify-content: space-around;
+    align-items: center;
     height: 80px;
     margin: 20px auto;
     padding: 0 32px;
-    justify-content: space-around;
-    align-items: center;
 }
 
 .container__logo {
@@ -82,7 +83,7 @@ nav a {
 }
 
 .cabecalho__titulo {
-    color: #101828;
+    color: var(--cor-subtitulo);
     font-size: 48px;
 }
 
@@ -96,61 +97,60 @@ nav a {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 32px;
-    margin: 0 auto; 
+    margin: auto; 
     padding: 0 40px 96px;  
 }
 
-.metricas__numero {
+.metricas__titulo {
     color: var(--cor-destaque);
     font-size: 60px;
     font-weight: 600;
     line-height: 100px;
 }
 
-.metricas__titulo {
-    color: #101828;
+.metricas__subtitulo {
+    color: var(--cor-subtitulo);
     font-size: 18px;
     font-weight: 800;
     line-height: 28px;
     padding: 10px 0;
 }
 
-.metricas__descricao {
-    line-height: 24px;
-}
-
-.vagas__talentos {
+.container__talentos {
     text-align: center;
     margin: 96px auto;
 }
 
-.vagas__texto {
-    text-align: center;
+.vagas__titulo {
     color: var(--cor-destaque);
     font-weight: 600;
+    font-size: 16px;
     line-height: 20px;
     padding-bottom: 16px;
 }
 
-.vagas__titulo {
-    color: #101828;
+.vagas__subtitulo {
+    color: var(--cor-subtitulo);
     font-size: 36px;
     font-weight: 600;
     line-height: 44px;
     letter-spacing: -0.72px;
     padding-bottom: 20px;
-    text-align: center;
 }
 
 .vagas__descricao {
     font-size: 20px;
     font-weight: 400;
     line-height: 30px;
-    text-align: center;
+}
+
+.container__imagem {
+    display: flex;
+    justify-content: center;
 }
 
 .vagas__imagem {
-    max-width: 1400px;
+    width: 1400px;
     height: 400px;
     margin-top: 62px;
 }
