@@ -301,4 +301,28 @@ nav a {
     background-color: black;
 }
 
+@media screen and (max-width: 1024px){
+    .container__nav {
+        max-width: 900px;
+        margin: auto;
+    }
 
+    .container__menu {
+        gap: 15px;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .container__logo{
+        text-align: left;
+        margin-left: 0;
+        padding: 0;
+    }
+    .container__nav {
+        font-size: 14px;
+        max-width: 900px;
+    }
+    .container__menu {
+        margin: auto;
+    }
+}
